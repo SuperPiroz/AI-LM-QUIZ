@@ -1,0 +1,430 @@
+[
+    {
+      "question": "Vad definieras som bildanalys?",
+      "answer": "Processen att extrahera meningsfull information från bilder med hjälp av tekniker, algoritmer och modeller."
+    },
+    {
+      "question": "Vilka är tre nyckeltillämpningar för bildanalys?",
+      "answer": "Medicin, säkerhet och fordonsindustrin."
+    },
+    {
+      "question": "Vad är en av de största utmaningarna inom bildanalys?",
+      "answer": "Storleken på bilddata och komplexiteten i att extrahera funktioner."
+    },
+    {
+      "question": "Varför är neurala nätverk lämpliga för bildanalys?",
+      "answer": "De kan automatiskt extrahera relevanta egenskaper från bilder och erbjuder skalbarhet och robusthet."
+    },
+    {
+      "question": "Vilka tre nyckelmekanismer bygger CNNs på?",
+      "answer": "Konvolution, pooling och fullständiga lager."
+    },
+    {
+      "question": "Vad är syftet med konvolution i ett CNN?",
+      "answer": "Att extrahera lokala mönster som kanter eller texturer genom att använda filter som glider över bilden."
+    },
+    {
+      "question": "Vad är max-pooling och varför används det?",
+      "answer": "En metod som reducerar storleken på feature maps genom att behålla maxvärdet i små rutor, vilket minskar beräkningskostnad och motverkar överanpassning."
+    },
+    {
+      "question": "Vad gör de fullständiga lagren i ett CNN?",
+      "answer": "De samlar de extraherade funktionerna för att fatta ett slutgiltigt beslut, till exempel bildklassificering."
+    },
+    {
+      "question": "Vad är en fördel med CNNs automatiska funktionsextraktion?",
+      "answer": "Det eliminerar behovet av manuell design och extraktion av egenskaper."
+    },
+    {
+      "question": "Vad innebär translationsinvarians hos CNNs?",
+      "answer": "Förmågan att känna igen ett objekt oavsett dess position i bilden."
+    },
+    {
+      "question": "Vilka steg ingår i bildförberedelse för neurala nätverk?",
+      "answer": "Normalisering, skalning, omformning till tensorer och data augmentation."
+    },
+    {
+      "question": "Vad är syftet med normalisering av pixelvärden?",
+      "answer": "Att justera värdena till ett hanterbart intervall (ofta 0-1) för snabbare nätverkskonvergens."
+    },
+    {
+      "question": "Vad är data augmentation och varför är det viktigt?",
+      "answer": "Att skapa modifierade versioner av bilder för att öka datasetets storlek och modellens robusthet, vilket minskar risken för överanpassning."
+    },
+    {
+      "question": "Vad är MNIST-datasetet känt för?",
+      "answer": "Ett dataset med handskrivna siffror som ofta används som ett \"hello world\"-exempel inom bildklassificering."
+    },
+    {
+      "question": "Vilket dataset används för ansiktsuttrycksigenkänning i kursen?",
+      "answer": "FER-2013-datasetet med ansikten kategoriserade i sju emotionella kategorier."
+    },
+    {
+      "question": "Vilka lager används vanligtvis när man bygger en CNN-modell?",
+      "answer": "Conv2D, MaxPooling2D, Flatten och Dense."
+    },
+    {
+      "question": "Vad är syftet med en förlustfunktion i en CNN-modell?",
+      "answer": "Att mäta hur dåligt modellen presterar och guida justeringen av vikter under träningen."
+    },
+    {
+      "question": "Vad indikerar överanpassning i en CNN-modell?",
+      "answer": "När modellen presterar bra på träningsdata men dåligt på ny, osedd data."
+    },
+    {
+      "question": "Vilken teknik kan användas för att förhindra överanpassning i CNNs?",
+      "answer": "Early Stopping, Dropout eller ytterligare data augmentation."
+    },
+    {
+      "question": "Vad är en Confusion Matrix och varför är den användbar?",
+      "answer": "En tabell som visar modellens klassificeringsresultat och hjälper till att utvärdera prestandan."
+    },
+    {
+      "question": "Vad är en dataström?",
+      "answer": "Ett kontinuerligt flöde av data som genereras och skickas från en eller flera källor i realtid."
+    },
+    {
+      "question": "Hur skiljer sig dataströmmar från batchbearbetning?",
+      "answer": "Dataströmmar bearbetas i realtid med låg latens, medan batchbearbetning analyserar data i större block vid fasta tidpunkter."
+    },
+    {
+      "question": "Vilka är tre egenskaper hos dataströmmar?",
+      "answer": "Oändligt flöde, låg latens och möjlighet till realtidsanalys."
+    },
+    {
+      "question": "Vilka är tre exempel på dataströmmar?",
+      "answer": "Sensordata från IoT-enheter, finansiella transaktioner och inlägg på sociala medier."
+    },
+    {
+      "question": "Vad är en viktig tillämpning av dataströmmar inom AI?",
+      "answer": "Realtidsövervakning och avvikelsedetektion, till exempel för bedrägerier i finansiella transaktioner."
+    },
+    {
+      "question": "Vad är prediktivt underhåll?",
+      "answer": "Att använda AI-modeller för att förutsäga när utrustning behöver underhåll baserat på sensordata."
+    },
+    {
+      "question": "Hur används dataströmmar i rekommendationssystem?",
+      "answer": "Systemen anpassar rekommendationer omedelbart baserat på användaraktivitet i realtid."
+    },
+    {
+      "question": "Vad är en fördel med NLP i realtid?",
+      "answer": "Möjligheten att analysera sentiment i sociala medier eller driva chatbots direkt när data anländer."
+    },
+    {
+      "question": "Hur används dataströmmar i autonoma system?",
+      "answer": "Självkörande fordon bearbetar kontinuerligt sensordata för omedelbara beslut om navigering."
+    },
+    {
+      "question": "Vad är Apache Kafka?",
+      "answer": "En open-source plattform designad för att hantera realtidsdataflöden, fungerande som en meddelandeförmedlare."
+    },
+    {
+      "question": "Vilka är de tre huvudkomponenterna i Kafkas arkitektur?",
+      "answer": "Producenter, konsumenter och brokers."
+    },
+    {
+      "question": "Vad gör en producent i Kafka?",
+      "answer": "Skickar (publicerar) data till Kafka-topics."
+    },
+    {
+      "question": "Vad gör en konsument i Kafka?",
+      "answer": "Tar emot och bearbetar data genom att lyssna på specifika topics."
+    },
+    {
+      "question": "Vad är en broker i Kafka?",
+      "answer": "En server som tar emot data från producenter och skickar den vidare till konsumenter."
+    },
+    {
+      "question": "Vad är ett Kafka-kluster?",
+      "answer": "En samling av flera Kafka-brokers som arbetar tillsammans för skalbarhet och hög tillgänglighet."
+    },
+    {
+      "question": "Vad är Zookeepers roll i Kafka?",
+      "answer": "Att hantera och koordinera Kafka-klustret för att säkerställa dess tillförlitlighet."
+    },
+    {
+      "question": "Vad är ett topic i Kafka?",
+      "answer": "En kategori eller kanal som Kafka använder för att organisera dataströmmar."
+    },
+    {
+      "question": "Vad är en partition i Kafka och varför är den viktig?",
+      "answer": "En uppdelning av ett topic som möjliggör parallell bearbetning och förbättrar skalbarhet och prestanda."
+    },
+    {
+      "question": "Vad är en offset i Kafka?",
+      "answer": "En unik position som tilldelas varje meddelande inom en partition."
+    },
+    {
+      "question": "Vilka är tre fördelar med Kafka jämfört med direkt API-anrop?",
+      "answer": "Buffring och köhantering, skalbarhet och feltolerans."
+    },
+    {
+      "question": "Vad är en event-driven arkitektur?",
+      "answer": "En design där systemkomponenter kommunicerar via händelser (meddelanden) snarare än direkt anrop."
+    },
+    {
+      "question": "Vad är \"sliding window\"-tekniken i realtidsanalys?",
+      "answer": "En metod som analyserar de senaste N datapunkterna i en ström, användbar för prediktioner och avvikelsedetektion."
+    },
+    {
+      "question": "Vad är syftet med plt.ion() i realtidsvisualisering?",
+      "answer": "Aktiverar interaktivt läge i Matplotlib så att grafer kan uppdateras dynamiskt utan att behöva rita om fönstret."
+    },
+    {
+      "question": "Vad är objektigenkänning?",
+      "answer": "Att identifiera och lokalisera specifika objekt, som en bil eller ett ansikte, inom en bild."
+    },
+    {
+      "question": "Vad är skillnaden mellan bildklassificering och bildsegmentering?",
+      "answer": "Bildklassificering tilldelar en hel bild en kategori, medan bildsegmentering delar upp bilden i distinkta regioner."
+    },
+    {
+      "question": "Vad är ett filter (kernel) i ett CNN?",
+      "answer": "En mindre matris av tal som används för att extrahera specifika mönster som kanter eller texturer från en bild."
+    },
+    {
+      "question": "Vad är en feature map?",
+      "answer": "En ny bildrepresentation som genereras av ett filter under konvolution, vilket visar var ett visst mönster finns i originalbilden."
+    },
+    {
+      "question": "Vad är padding i CNNs och varför används det?",
+      "answer": "Att lägga till extra pixlar runt bildens kanter för att säkerställa att filtret kan centreras korrekt och förhindra storleksminskning."
+    },
+    {
+      "question": "Vad är skillnaden mellan 'valid padding' och 'same padding'?",
+      "answer": "'Valid padding' använder ingen padding vilket minskar utdatans storlek, medan 'same padding' lägger till padding för att bibehålla storleken."
+    },
+    {
+      "question": "Vad är delade vikter i CNNs?",
+      "answer": "Att samma filter används över hela bilden, vilket minskar antalet parametrar och gör CNN mer effektivt."
+    },
+    {
+      "question": "Vad är lokala mottagningsfält i CNNs?",
+      "answer": "Att varje neuron i ett konvolutionellt lager endast bearbetar en liten del av bilden, vilket hjälper nätverket att fokusera på små detaljer."
+    },
+    {
+      "question": "Vad är en tensor i samband med bilddata?",
+      "answer": "En flerdimensionell array som används för att representera bilder i neurala nätverk, till exempel (höjd, bredd, färgkanaler)."
+    },
+    {
+      "question": "Vad är en epok i träning av neurala nätverk?",
+      "answer": "En fullständig genomgång av hela träningsdatasetet under träningsprocessen."
+    },
+    {
+      "question": "Vad mäter noggrannhet (accuracy) i en modell?",
+      "answer": "Andelen korrekt klassificerade exempel av det totala antalet exempel."
+    },
+    {
+      "question": "Vad är Early Stopping?",
+      "answer": "En teknik som stoppar träningen när modellens prestanda på valideringsdata börjar försämras, för att förhindra överanpassning."
+    },
+    {
+      "question": "Vad är Dropout och hur fungerar det?",
+      "answer": "En reguläriseringsteknik där slumpmässigt utvalda neuroner ignoreras under träningen för att minska överanpassning."
+    },
+    {
+      "question": "Vad är en ROC AUC-kurva?",
+      "answer": "Ett mått på en modells förmåga att skilja mellan klasser, där en högre AUC indikerar bättre prestanda."
+    },
+    {
+      "question": "Vad är en Classification Report?",
+      "answer": "En sammanfattning av modellens prestanda som inkluderar mått som precision, recall och F1-score för varje klass."
+    },
+    {
+      "question": "Vad är streaming data?",
+      "answer": "Data som analyseras och ageras på så snart den anländer, till skillnad från traditionella batchbearbetningsmetoder."
+    },
+    {
+      "question": "Vad innebär låg latens i dataströmmar?",
+      "answer": "Att bearbetning sker nästan omedelbart när data anländer, med minimal fördröjning."
+    },
+    {
+      "question": "Vad är realtidsanalys?",
+      "answer": "Möjligheten att analysera och reagera på data medan den flödar in, vilket ger omedelbara insikter och beslut."
+    },
+    {
+      "question": "Vad är avvikelsedetektion i realtid?",
+      "answer": "Att identifiera ovanliga mönster eller händelser i dataströmmar som avviker från det normala."
+    },
+    {
+      "question": "Hur används dataströmmar i personaliserad marknadsföring?",
+      "answer": "Genom att analysera användarbeteenden i realtid och leverera dynamiska, skräddarsydda kampanjer."
+    },
+    {
+      "question": "Vad är en meddelandeförmedlare (message broker)?",
+      "answer": "Ett system som fungerar som mellanhand för att överföra meddelanden mellan olika applikationer eller system."
+    },
+    {
+      "question": "Vad innebär skalbarhet i Kafka?",
+      "answer": "Förmågan att hantera en ökande mängd arbete eller data genom att lägga till fler brokers eller partitioner."
+    },
+    {
+      "question": "Vad är serialisering i Kafka?",
+      "answer": "Processen att omvandla data till ett format som kan skickas över nätverket, till exempel JSON till binär data."
+    },
+    {
+      "question": "Vad är deserialisering i Kafka?",
+      "answer": "Processen att omvandla inkommande data tillbaka till sitt ursprungliga format, till exempel binär data till JSON."
+    },
+    {
+      "question": "Vad är CoinGecko API?",
+      "answer": "Ett öppet API som tillhandahåller realtidsdata för priser på kryptovalutor som Bitcoin och Ethereum."
+    },
+    {
+      "question": "Vad är en fördel med att använda Kafka för kryptovalutapriser?",
+      "answer": "Möjligheten att buffra och distribuera prisdata till flera konsumenter i realtid utan att överbelasta API:et."
+    },
+    {
+      "question": "Vad är en nackdel med Kafka?",
+      "answer": "Ökad komplexitet i installation och underhåll samt krav på extra infrastruktur."
+    },
+    {
+      "question": "Vad är en viktig anledning att använda Kafka istället för direkta API-anrop?",
+      "answer": "Kafkas förmåga att hantera avbrott och buffra data tills konsumenter är redo, vilket förhindrar dataförlust."
+    },
+    {
+      "question": "Vad är en viktig egenskap hos en händelsestyrd arkitektur?",
+      "answer": "Löst kopplade systemkomponenter som kommunicerar via meddelanden snarare än direkt anrop."
+    },
+    {
+      "question": "Vad är en viktig tillämpning av \"sliding window\"-tekniken i realtidsanalys?",
+      "answer": "Att fånga en sekvens av de senaste datavärdena för att göra förutsägelser eller upptäcka trender."
+    },
+    {
+      "question": "Vad är en fördel med att använda plt.ion() i realtidsvisualisering?",
+      "answer": "Att grafer kan uppdateras dynamiskt utan att användaren behöver stänga och rita om fönstret."
+    },
+    {
+      "question": "Vad är en viktig skillnad mellan dataströmmar och batchbearbetning när det gäller latens?",
+      "answer": "Dataströmmar har låg latens (nära omedelbar bearbetning), medan batchbearbetning har hög latens (fördröjd bearbetning)."
+    },
+    {
+      "question": "Vad är en viktig faktor att överväga när man väljer mellan Kafka och direkta API-anrop?",
+      "answer": "Behovet av skalbarhet, feltolerans och buffringsmöjligheter som Kafka erbjuder."
+    },
+    {
+      "question": "Vad är en viktig användning av realtidsövervakning med dataströmmar?",
+      "answer": "Att omedelbart upptäcka och larma om avvikelser eller onormala händelser, som bedrägerier eller utrustningsfel."
+    },
+    {
+      "question": "Vad är en viktig fördel med CNNs automatiska funktionsextraktion jämfört med traditionella metoder?",
+      "answer": "Att det eliminerar behovet av manuell design av funktioner och kan lära sig komplexa mönster direkt från data."
+    },
+    {
+      "question": "Vad är en viktig utmaning med att arbeta med stora bilddataset?",
+      "answer": "Det höga lagrings- och beräkningskravet som krävs för att bearbeta och analysera stora mängder bilddata."
+    },
+    {
+      "question": "Vad är en viktig anledning till att använda pooling-lager i CNNs?",
+      "answer": "För att minska dimensionaliteten på feature maps och göra modellen mer robust mot små förändringar i indata."
+    },
+    {
+      "question": "Vad är en viktig faktor att överväga vid bildförberedelse för neurala nätverk?",
+      "answer": "Att säkerställa att alla bilder har samma dimensioner och att pixelvärdena är normaliserade för optimal träning."
+    },
+    {
+      "question": "Vad är en viktig tillämpning av data augmentation i bildanalys?",
+      "answer": "Att öka mängden träningsdata och förbättra modellens förmåga att generalisera till nya, osett data."
+    },
+    {
+      "question": "Vad är en viktig fördel med att använda MNIST-datasetet för inlärning?",
+      "answer": "Dess enkelhet och lilla storlek gör det idealiskt för att lära sig grunderna i bildklassificering och testa olika modeller."
+    },
+    {
+      "question": "Vad är en viktig indikator på överanpassning under träning av en CNN-modell?",
+      "answer": "När träningsnoggrannheten är mycket hög men valideringsnoggrannheten planar ut eller försämras."
+    },
+    {
+      "question": "Vad är en viktig anledning till att använda Early Stopping under modellträning?",
+      "answer": "För att stoppa träningen när modellens prestanda på valideringsdata börjar försämras och därmed förhindra överanpassning."
+    },
+    {
+      "question": "Vad är en viktig användning av en Confusion Matrix?",
+      "answer": "Att ge en detaljerad översikt över modellens klassificeringsprestanda, inklusive korrekta och felaktiga klassificeringar."
+    },
+    {
+      "question": "Vad är en viktig skillnad mellan linjär regression och logistisk regression?",
+      "answer": "Linjär regression används för kontinuerliga utfall, medan logistisk regression används för binära eller kategoriska utfall."
+    },
+    {
+      "question": "Vad är en viktig tillämpning av korsvalidering (cross-validation)?",
+      "answer": "Att utvärdera modellens prestanda på olika delar av datan för att säkerställa att den generaliserar väl till ny data."
+    },
+    {
+      "question": "Vad är en viktig faktor att överväga vid val av klustringsalgoritm?",
+      "answer": "Typen av data och det önskade antalet kluster, samt algoritmens känslighet för brus och skalning av data."
+    },
+    {
+      "question": "Vad är en viktig användning av en silhuettvärde (silhouette score)?",
+      "answer": "Att bedöma kvaliteten på klustringen genom att mäta hur väl varje datapunkt passar i sitt tilldelade kluster."
+    },
+    {
+      "question": "Vad är en viktig fördel med att använda PCA för dimensionreduktion?",
+      "answer": "Att reducera antalet variabler samtidigt som den viktigaste informationen i datan bevaras."
+    },
+    {
+      "question": "Vad är en viktig skillnad mellan parametriska och icke-parametriska statistiska metoder?",
+      "answer": "Parametriska metoder gör antaganden om datans fördelning, medan icke-parametriska metoder inte gör sådana antaganden."
+    },
+    {
+      "question": "Vad är en viktig användning av ett Chi2-test?",
+      "answer": "Att undersöka om det finns ett statistiskt signifikant samband mellan två kategoriska variabler."
+    },
+    {
+      "question": "Vad är en viktig faktor att överväga vid hantering av saknade värden i ett dataset?",
+      "answer": "Om de saknade värdena är slumpmässiga eller systematiskt fördelade, och vilken imputeringsmetod som är mest lämplig."
+    },
+    {
+      "question": "Vad är en viktig fördel med att använda en boxplot för dataanalys?",
+      "answer": "Att snabbt visualisera fördelningen av data, inklusive median, kvartiler och eventuella outliers."
+    },
+    {
+      "question": "Vad är en viktig anledning till att normalisera data innan maskininlärning?",
+      "answer": "För att säkerställa att alla variabler har samma skala och därmed påverkar modellträningen på ett jämförbart sätt."
+    },
+    {
+      "question": "Vad är en viktig skillnad mellan normalisering och standardisering?",
+      "answer": "Normalisering skalar data till ett intervall (t.ex. [0,1]), medan standardisering omvandlar data till medelvärde 0 och standardavvikelse 1."
+    },
+    {
+      "question": "Vad är en viktig användning av ett t-test?",
+      "answer": "Att jämföra medelvärdena mellan två grupper och avgöra om skillnaden är statistiskt signifikant."
+    },
+    {
+      "question": "Vad är en viktig faktor att överväga vid val av diagramtyp för datavisualisering?",
+      "answer": "Typen av data och det specifika syftet med visualiseringen, till exempel att visa fördelningar, trender eller samband."
+    },
+    {
+      "question": "Vad är en viktig fördel med att använda scatterplots för dataanalys?",
+      "answer": "Att visualisera sambandet mellan två numeriska variabler och upptäcka eventuella mönster eller korrelationer."
+    },
+    {
+      "question": "Vad är en viktig anledning till att använda histogram?",
+      "answer": "Att visa fördelningen av en numerisk variabel och identifiera mönster som skewness eller multimodalitet."
+    },
+    {
+      "question": "Vad är en viktig faktor att överväga vid hantering av outliers i ett dataset?",
+      "answer": "Om outliers representerar giltiga datapunkter eller mätfel, och hur de påverkar analysens resultat."
+    },
+    {
+      "question": "Vad är en viktig användning av z-score för dataanalys?",
+      "answer": "Att identifiera outliers genom att mäta hur många standardavvikelser en datapunkt ligger från medelvärdet."
+    },
+    {
+      "question": "Vad är en viktig fördel med att använda IQR (Interquartile Range) för outlierdetektion?",
+      "answer": "Att den är mindre känslig för extrema värden jämfört med standardavvikelsebaserade metoder."
+    },
+    {
+      "question": "Vad är en viktig skillnad mellan precision och recall i klassificering?",
+      "answer": "Precision mäter andelen korrekta positiva förutsägelser av alla positiva förutsägelser, medan recall mäter andelen korrekta positiva förutsägelser av alla faktiska positiva fall."
+    },
+    {
+      "question": "Vad är en viktig användning av en ROC-kurva?",
+      "answer": "Att visualisera trade-off mellan sant positiva rate och falskt positiva rate vid olika klassificeringströsklar."
+    },
+    {
+      "question": "Vad är en viktig faktor att överväga vid val av tröskelvärde för binär klassificering?",
+      "answer": "Den relativa vikten av att minimera falskt positiva jämfört med falskt negativa, beroende på applikationens behov."
+    }
+  ]

@@ -1,0 +1,162 @@
+[
+    {
+      "question": "Vad är Transfer Learning?",
+      "answer": "Transfer Learning är en maskininlärningsteknik där en modell, tränad på en uppgift, återanvänds eller anpassas för en ny men relaterad uppgift. Istället för att börja från noll, används en redan tränad modell för att anpassas till ett nytt problem."
+    },
+    {
+      "question": "Varför är Transfer Learning användbart gällande datamängder?",
+      "answer": "Det minskar behovet av stora datamängder, eftersom en förtränad modell redan har lärt sig mönster från ett stort dataset. Detta möjliggör hög prestanda även med mindre data för den nya uppgiften."
+    },
+    {
+      "question": "Hur påverkar Transfer Learning träningstiden?",
+      "answer": "Det leder till snabbare träningstid eftersom de tidiga lagren av en förtränad modell redan har lärt sig generella mönster. Endast de sista lagren behöver finjusteras, vilket minskar den totala träningstiden."
+    },
+    {
+      "question": "Förbättrar Transfer Learning modellprestanda?",
+      "answer": "Ja, genom att utgå från en modell med förförståelse kan den överträffa en modell tränad från grunden. Detta är särskilt fördelaktigt om det nya datasetet är litet eller begränsat."
+    },
+    {
+      "question": "Vad är Pre-training i Transfer Learning?",
+      "answer": "Pre-training är det första steget där en modell tränas på ett stort och generellt relevant dataset, ofta för en annan uppgift. Detta skapar en modell med bred förståelse för grundläggande dataegenskaper."
+    },
+    {
+      "question": "Vad lär sig modellen under Pre-training?",
+      "answer": "Under denna fas lär sig modellen att känna igen grundläggande mönster eller 'features' i data, som kanter och former för bilder, eller ordstrukturer och grammatik för text. Denna generaliserade kunskap är användbar i många olika uppgifter."
+    },
+    {
+      "question": "Vad är Fine-tuning i Transfer Learning?",
+      "answer": "Fine-tuning är steget där den förtränade modellen anpassas till en specifik uppgift eller domän. Detta görs genom att justera de sista lagren i modellen, medan de tidiga lagren ofta förblir oförändrade."
+    },
+    {
+      "question": "Varför fryser man tidiga lager under Fine-tuning?",
+      "answer": "De tidiga lagren har lärt sig allmänna mönster som är generella nog för den nya uppgiften. Genom att frysa dessa sparas tid och beräkningsresurser, samtidigt som risken för överträning minskar."
+    },
+    {
+      "question": "Vad innebär Domänöverföring?",
+      "answer": "Domänöverföring innebär att en modell tränad i en viss domän (källuppgift) används i en annan, relaterad domän (måluppgift). En domän kan vara en specifik typ av data, som bilder eller text från en viss kontext."
+    },
+    {
+      "question": "När fungerar Domänöverföring bäst?",
+      "answer": "Transfer Learning fungerar bäst när källuppgiften och måluppgiften är relaterade, vilket innebär att funktionerna modellen lärt sig i källuppgiften är användbara i måluppgiften. Om domänerna är för olika kan prestandan minska utan omfattande finjustering."
+    },
+    {
+      "question": "Vad är Convolutional Neural Networks (CNN)?",
+      "answer": "CNNs är en typ av djupt lagerbaserade neurala nätverk som ofta används för bildklassificering. De är populära inom Transfer Learning på grund av sin prestanda och generaliserbarhet."
+    },
+    {
+      "question": "Vad är VGG?",
+      "answer": "VGG är en djupt lagerbaserad CNN-modell som består av enkla konvolutionella lager och maxpooling-lager. Den är populär för Transfer Learning då dess enkla struktur gör den lätt att använda och finjustera."
+    },
+    {
+      "question": "Vad är ResNet och vad introducerade det?",
+      "answer": "ResNet (Residual Networks) introducerade konceptet residual learning, vilket möjliggör effektiv träning av mycket djupa nätverk. Den gör detta genom att lägga till hopplänkar som låter information flöda förbi vissa lager."
+    },
+    {
+      "question": "Vad är huvudsyftet med Residual Connections i ResNet?",
+      "answer": "Residual connections adderar utgången från ett lager direkt till ett senare lager, vilket underlättar gradientflödet under träningen. Detta hjälper nätverket att lära sig skillnaden (residualen) mellan bearbetad och mindre bearbetad data."
+    },
+    {
+      "question": "Vad är Inception v3 känd för?",
+      "answer": "Inception v3 är känd för sin speciella struktur med Inception-block, som kombinerar flera typer av konvolutioner och pooling-operationer parallellt. Detta ger modellen en rik och flexibel representation av bildinformation."
+    },
+    {
+      "question": "Vad är 'vanishing gradients'-problemet?",
+      "answer": "Vanishing gradients innebär att gradienterna, som används för att uppdatera ett neuralt nätverks vikter, blir extremt små när man går bakåt i nätverket. Detta gör att nätverket får svårt att lära sig effektivt."
+    },
+    {
+      "question": "Hur löser ResNet problemet med vanishing gradients?",
+      "answer": "ResNet löser detta genom residual connections (hoppkopplingar), som adderar utgången från ett lager direkt till ett senare lager. Detta underlättar gradientflödet under träningen."
+    },
+    {
+      "question": "Varför behövs många lager i ResNet trots genvägar?",
+      "answer": "Genvägarna hjälper till att bevara ursprunglig information och förhindrar vanishing gradients, men lagren utför fortfarande viktiga beräkningar som lär sig komplexa mönster. Djupa lager behövs för att identifiera mer avancerade och abstrakta representationer."
+    },
+    {
+      "question": "Vad är Natural Language Processing (NLP)?",
+      "answer": "NLP är ett område inom AI som fokuserar på att ge datorer förmågan att förstå, tolka och producera mänskligt språk. Det används i applikationer som automatiska översättningar och chatbots."
+    },
+    {
+      "question": "Varför är Transfer Learning viktigt för NLP?",
+      "answer": "Det är viktigt eftersom språkliga modeller tränas på enorma textmängder, vilket ger dem en generell språkförståelse. Med Transfer Learning kan vi snabba upp träningsprocessen, få bättre prestanda och hantera mindre data för specifika uppgifter."
+    },
+    {
+      "question": "Vad är en stor utmaning inom NLP?",
+      "answer": "En stor utmaning är mångtydighet, där ord kan ha olika betydelser beroende på sammanhang. Andra utmaningar inkluderar sarkasm, ironi och språkvariationer."
+    },
+    {
+      "question": "Vad är Sentimentanalys?",
+      "answer": "Sentimentanalys är en typ av textklassificering som identifierar och kategoriserar text som positiv, negativ eller neutral baserat på känslomässiga signaler. Det används för att analysera kundrecensioner eller filmrecensioner."
+    },
+    {
+      "question": "Vad är Transformer-arkitekturen?",
+      "answer": "Transformer är en neural nätverksarkitektur som revolutionerade NLP genom att ersätta äldre arkitekturer som LSTM och GRU. Den är grunden för modeller som BERT och GPT."
+    },
+    {
+      "question": "Vad är Attention-mekanismen i Transformers?",
+      "answer": "Attention-mekanismen hjälper modellen att fokusera på relevanta delar av inputtexten. Den identifierar vilka delar som är viktiga för att förstå sammanhanget."
+    },
+    {
+      "question": "Vad är Self-Attention och vad är dess syfte?",
+      "answer": "Self-Attention låter varje ord i en mening analysera sin betydelse i relation till andra ord inom samma mening. Detta ger en djupare förståelse för hela meningen genom att fokusera på de mest relevanta orden oavsett deras position."
+    },
+    {
+      "question": "Vad är skillnaden mellan Attention och Self-Attention?",
+      "answer": "Self-attention handlar om intern analys och kontextförståelse inom samma mening, medan Attention kan visa relationer mellan ord från två olika meningar eller källor."
+    },
+    {
+      "question": "Vilka tre representationer skapar modellen för varje ord i Self-Attention?",
+      "answer": "Modellen skapar Query (Fråga), Key (Nyckel) och Value (Värde) för varje ord. Query representerar ordets förfrågan, Key dess information, och Value dess faktiska innehåll."
+    },
+    {
+      "question": "Hur hanterar Transformer-modeller ordning eller sekvens?",
+      "answer": "De lägger till positionell kodning, vilket är ett numeriskt tillägg till varje ords embedding, för att modellen ska förstå ordens sekvens i en mening. Detta är avgörande eftersom ordningsföljden påverkar meningens betydelse."
+    },
+    {
+      "question": "Vad är en 'embedding'?",
+      "answer": "En embedding omvandlar varje ord i en text till en flerdimensionell numerisk vektor. Dessa vektorer representerar ordets betydelse i relation till andra ord, där semantiskt lika ord placeras nära varandra i rymden."
+    },
+    {
+      "question": "Vilka är de två huvuddelarna i en Transformer-modell?",
+      "answer": "En Transformer består av två huvuddelar: encoders och decoders. Encodern analyserar inputtexten för förståelse, medan decodern genererar utdata."
+    },
+    {
+      "question": "Vad står BERT för?",
+      "answer": "BERT står för Bidirectional Encoder Representations from Transformers. Det är en transformerbaserad modell utvecklad av Google."
+    },
+    {
+      "question": "Vad är BERTs viktigaste innovation?",
+      "answer": "Dess viktigaste innovation är dess bidirektionella inlärning, vilket innebär att modellen lär sig från både vänster och höger om ett ord samtidigt. Detta ger en mycket djupare förståelse för kontexten jämfört med unidirektionella modeller."
+    },
+    {
+      "question": "Vilka huvudtekniker används för förträning i BERT?",
+      "answer": "De två centrala teknikerna är Masked Language Modeling (MLM) och Next Sentence Prediction (NSP). MLM tvingar modellen att förutsäga maskerade ord, och NSP hjälper den att förstå meningars relationer."
+    },
+    {
+      "question": "För vilka uppgifter används BERT primärt?",
+      "answer": "BERT används främst för uppgifter som kräver en djup förståelse av text, såsom sentimentanalys, frågesvarssystem (där svar redan finns i texten) och textklassificering."
+    },
+    {
+      "question": "Vad står GPT för?",
+      "answer": "GPT står för Generative Pre-trained Transformer. Det är en transformerbaserad modell som används för att generera text."
+    },
+    {
+      "question": "Vad är GPTs primära användningsområde?",
+      "answer": "GPT är en generativ modell som kan skapa ny text, används för textgenerering, chatbots och AI-assistenter, samt sammanfattning av texter."
+    },
+    {
+      "question": "Vad är den huvudsakliga arkitektoniska skillnaden mellan BERT och GPT?",
+      "answer": "BERT använder endast encoders för att förstå text bidirektionellt. GPT använder en unidirectional (framåtriktad) transformer, vilket innebär att den endast läser och bearbetar text från vänster till höger, främst för textgenerering."
+    },
+    {
+      "question": "Hur påverkar GPTs unidirektionella natur dess användning?",
+      "answer": "Den unidirektionella naturen gör att GPT endast kan förutsäga framtida ord baserat på tidigare ord. Detta är optimalt för generering av sammanhängande text."
+    },
+    {
+      "question": "Vad är en 'tokenizer' i NLP-modeller som BERT?",
+      "answer": "En tokenizer är ett verktyg som konverterar text till mindre delar kallade tokens, och sedan till numeriska ID som modellen kan bearbeta. Den skapar även masker för att markera relevanta positioner i texten."
+    },
+    {
+      "question": "Hur processerar GPT-modeller artikeltext för att besvara frågor?",
+      "answer": "De tokeniserar och vektoriserar texten, och använder sedan self-attention för att identifiera de mest relevanta delarna av artikeln i förhållande till frågan. Modellen genererar ett sammanhängande svar baserat på denna förståelse."
+    }
+  ]
