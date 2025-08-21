@@ -1,0 +1,242 @@
+[
+    {
+      "question": "Vad är skillnaden mellan parametrisk och icke-parametrisk statistik?",
+      "answer": "Parametrisk statistik förutsätter en specifik fördelning av data, medan icke-parametrisk inte gör några sådana antaganden. Parametriska metoder inkluderar t-test och ANOVA, medan icke-parametriska inkluderar Wilcoxon-test och Kruskal-Wallis."
+    },
+    {
+      "question": "Nämn några parametriska metoder",
+      "answer": "T-test för jämförelse av medelvärden, ANOVA för flera grupper, och linjär regression. Dessa förutsätter normalfördelade data och specificerade modellparametrar."
+    },
+    {
+      "question": "Nämn några icke-parametriska metoder",
+      "answer": "Mann-Whitney U-test, Kruskal-Wallis test, och Spearmans rangkorrelation. Dessa kräver inga förutsättningar om datans fördelning och är robusta mot avvikelser."
+    },
+    {
+      "question": "Varför räcker det inte att bara visuellt jämföra staplarnas höjder i ett stapeldiagram?",
+      "answer": "Visuell jämförelse tar inte hänsyn till slumpmässig variation eller samplingsfel. Statistiska tester behövs för att kvantifiera osäkerheten och avgöra om skillnader är signifikanta."
+    },
+    {
+      "question": "Vilka statistiska tester skulle du kunna använda för att säkerställa skillnader i stapeldiagram?",
+      "answer": "Chi-två-test för kategoriska data, t-test för kontinuerliga data, eller ANOVA för flera grupper. Valet beror på datatyp och antal jämförda grupper."
+    },
+    {
+      "question": "Beskriv en plan för att arbeta med ett nytt dataset från början till slut",
+      "answer": "Börja med datautforskning och rengöring, följt av explorativ dataanalys. Utför sedan funktionsval och datatransformation, träna olika modeller och utvärdera deras prestanda. Slutligen välj den bästa modellen och validera på osett data."
+    },
+    {
+      "question": "Varför är datareduktion viktigt?",
+      "answer": "Datareduktion minskar dimensionalitet och beräkningskomplexitet. Det förbättrar modellprestanda, reducerar överanpassning och gör data lättare att visualisera och tolka."
+    },
+    {
+      "question": "Vilka tekniker för multidimensionell skalning känner du till?",
+      "answer": "PCA (Principal Component Analysis) och t-SNE (t-distributed Stochastic Neighbor Embedding). PCA maximerar variansbevarande, medan t-SNE fokuserar på att bevara lokala strukturer och kluster."
+    },
+    {
+      "question": "Hur skiljer sig PCA och t-SNE åt?",
+      "answer": "PCA är linjär och maximerar global varians, lämplig för dimensionsreduktion. t-SNE är icke-linjär och bevara lokala avstånd, bättre för visualisering av kluster i högdimensionella data."
+    },
+    {
+      "question": "Vad innebär begreppet Unsupervised Machine Learning?",
+      "answer": "Oövervakad inlärning hittar mönster i data utan fördefinierade etiketter. Den används för klustring, dimensionsreduktion och associationsregler."
+    },
+    {
+      "question": "Nämn två vanliga tekniker inom unsupervised machine learning",
+      "answer": "K-means klustring grupperar data baserat på likhet i egenskaper. PCA reducerar dimensionalitet genom att hitta de viktigaste variationsriktningarna i data."
+    },
+    {
+      "question": "Vad innebär supervised machine learning?",
+      "answer": "Supervised learning använder etiketterade data för att träna modeller att göra förutsägelser. Det används praktiskt för klassificering, regression och tidsserieprognoser."
+    },
+    {
+      "question": "Beskriv skillnaden mellan supervised och unsupervised machine learning",
+      "answer": "Supervised learning kräver etiketterade träningsdata med kända utfall, medan unsupervised hittar mönster i oetiketterad data. Supervised används för förutsägelser, unsupervised för datautforskning."
+    },
+    {
+      "question": "Nämn tre vanliga algoritmer inom supervised learning",
+      "answer": "Linjär regression för kontinuerliga förutsägelser, logistisk regression för binära klassificeringar, och beslutsträd för både klassificering och regression med tolkningsbara regler."
+    },
+    {
+      "question": "Vad är logistisk regression och vad används den till?",
+      "answer": "Logistisk regression förutsäger sannolikheten för en binär händelse. Den används främst för klassificeringsproblem där utfall är ja/nej eller sant/falskt."
+    },
+    {
+      "question": "Beskriv vilken typ av utfall logistisk regression modellerar",
+      "answer": "Logistisk regression modellerar binära eller kategoriska utfall genom sannolikhetsberäkning. Exempel: prognostisera om en patient har en sjukdom baserat på symptom."
+    },
+    {
+      "question": "Vad är survival analysis och vad är speciellt med den?",
+      "answer": "Överlevnadsanalys studerar tiden till en specifik händelse och hanterar censurerade data. Den är speciell eftersom den hanterar ofullständiga observationer där slutpunkten inte inträffat."
+    },
+    {
+      "question": "Ge tre exempel på områden där survival analysis används",
+      "answer": "Medicin: överlevnad efter behandling. Teknik: tid till systemfel. Ekonomi: kundavhoppstider. Lämpligt eftersom dessa områden har censurerade data och tidsberoende händelser."
+    },
+    {
+      "question": "Förklara skillnaden mellan klassificeringsmodeller och regressionsmodeller",
+      "answer": "Klassificering förutsäger kategoriska etiketter, regression förutsäger kontinuerliga numeriska värden. Klassificering används för kategorisering, regression för kvantitativa förutsägelser."
+    },
+    {
+      "question": "Ge två exempel på problem där klassificering är lämpligt",
+      "answer": "E-postspamdetektion (kategoriserar e-post som spam eller ej) och bildigenkänning (identifierar objekt i bilder). Lämpligt eftersom utfallen är diskreta kategorier."
+    },
+    {
+      "question": "Ge två exempel på problem där regression är lämpligt",
+      "answer": "Bostadsprisprognoser (förutsäger kontinuerliga priser) och försäljningsprognoser (uppskattar framtida försäljningsvolymer). Lämpligt eftersom utfallen är numeriska och kontinuerliga."
+    },
+    {
+      "question": "Vad visar en Classification Report?",
+      "answer": "En Classification Report visar prestandamått för klassificeringsmodeller. Den inkluderar precision, recall, f1-score och accuracy för varje klass och genomsnitt."
+    },
+    {
+      "question": "Förklara innebörden av Accuracy",
+      "answer": "Accuracy mäter andelen korrekta förutsägelser av totala förutsägelser. Det är ett generellt mått på modellens overalla noggrannhet."
+    },
+    {
+      "question": "Förklara innebörden av Recall",
+      "answer": "Recall mäter andelen verkliga positiva som korrekt identifierats. Högre recall betyder färre falska negativ, viktigt när missade detectioner är kostsamma."
+    },
+    {
+      "question": "Förklara innebörden av Precision",
+      "answer": "Precision mäter andelen korrekta positiva förutsägelser av alla positiva förutsägelser. Högre precision betyder färre falska positiva, viktigt när falsklarm är problematiskt."
+    },
+    {
+      "question": "Varför är hög accuracy inte alltid tillförlitligt?",
+      "answer": "Hög accuracy kan vara missvisande vid obalanserade dataset där en klass dominerar. En modell kan uppnå hög accuracy genom att alltid förutsäga majoritetsklassen, men missa minoritetsklassen helt."
+    },
+    {
+      "question": "Vad är ett beslutsträd och hur fungerar det?",
+      "answer": "Ett beslutsträd är en flernivåbeslutsmodell som använder funktionsvillkor för förutsägelser. Det fungerar genom att följa grenar baserat på inputvärden till en slutlig nod som ger förutsägelsen."
+    },
+    {
+      "question": "Förklara skillnaden mellan Random Forest och XGBoost",
+      "answer": "Random Forest bygger träd oberoende och kombinerar resultat, medan XGBoost bygger träd sekventiellt och korrigerar tidigare fel. XGBoost använder gradient boosting för bättre prestanda."
+    },
+    {
+      "question": "Vad betyder det att Random Forest och XGBoost kan användas både som klassificerare och regressor?",
+      "answer": "De kan hantera både kategoriska (klassificering) och kontinuerliga (regression) målvariabler. Exempel: klassificera e-post som spam eller regressera bostadspriser baserat på egenskaper."
+    },
+    {
+      "question": "Vad innebär Grid Search?",
+      "answer": "Grid Search är en hyperparameteroptimering som testar alla kombinationer av fördefinierade parametervärden. Den hittar den optimala parameterkombinationen för bäst modellprestanda."
+    },
+    {
+      "question": "Varför använder man Grid Search?",
+      "answer": "Grid Search används för att systematiskt optimera modellhyperparametrar. Det förbättrar modellprestanda och säkerställer att man hittar nära optimala parametrar utan manuell testning."
+    },
+    {
+      "question": "Kan du tänka dig någon nackdel med Grid Search?",
+      "answer": "Grid Search är beräkningskrävande och tidskonsumerande för många parametrar. Den kan vara ineffektiv jämfört med randomiserade eller bayesianska optimeringsmetoder."
+    },
+    {
+      "question": "Vad är skillnaden mellan Feature Importance och Permutation Importance?",
+      "answer": "Feature Importance mäter inbyggd bidrag baserat på trädbeslut, medan Permutation Importance mäter prestandaförsämring när funktionsvärden slumpvis omfördelas. Permutation Importance är mer tillförlitlig för korrelerade features."
+    },
+    {
+      "question": "Vilka lager består ett artificiellt neuralt nätverk (ANN) av?",
+      "answer": "ANN består av ingångslager, dolda lager och utdatalager. Ingångslager tar emot data, dolda lager bearbetar information, och utdatalager ger slutgiltiga förutsägelser."
+    },
+    {
+      "question": "Beskriv varje lager och dess funktion i ANN",
+      "answer": "Ingångslager: tar rådata. Dolda lager: extraherar funktioner och mönster genom viktade transformationer. Utdatalager: producerar slutresultatet baserat på de bearbetade funktionerna."
+    },
+    {
+      "question": "Vad är en aktiveringsfunktion i ett neuralt nätverk?",
+      "answer": "Aktiveringsfunktioner introducerar icke-linjäritet i neurala nätverk. De bestämmer om en neuron ska aktiveras baserat på input, vilket möjliggör komplexa mönstersinlärning."
+    },
+    {
+      "question": "Varför använder vi aktiveringsfunktioner?",
+      "answer": "Aktiveringsfunktioner gör nätverk kapabla att lära sig icke-linjära mönster. Utan dem skulle neurala nätverk bara kunna representera linjära transformationer, vilket begränsar deras kapacitet."
+    },
+    {
+      "question": "Nämn några vanliga aktiveringsfunktioner",
+      "answer": "ReLU (Rectified Linear Unit), sigmoid och tanh. ReLU är populär för dess enkelhet och effektivitet, medan sigmoid och tanh används i specifika fall som utdatalager."
+    },
+    {
+      "question": "Hur fungerar Framåtpropagering (Forward propagation)?",
+      "answer": "Framåtpropagering beräknar nätverkets utdata från input genom successiva lager. Varje neuron beräknar en viktad summa av inputs och applicerar en aktiveringsfunktion."
+    },
+    {
+      "question": "Hur fungerar Bakåtpropagering (Backpropagation)?",
+      "answer": "Bakåtpropagering justerar nätverksvikter baserat på förutsägelsefel. Den beräknar gradienter av felfunktionen med avseende på varje vikt och uppdaterar vikterna för att minimera felet."
+    },
+    {
+      "question": "Vad är syftet med regularisering i maskininlärning?",
+      "answer": "Regularisering förhindrar överanpassning genom att straffa komplexa modeller. Det förbättrar generaliseringsförmågan på osett data och gör modeller mer robusta."
+    },
+    {
+      "question": "Varför behöver vi regularisering?",
+      "answer": "Regularisering behövs för att kontrollera modellkomplexitet och förhindra överanpassning. Utan regularisering kan modeller memorera brus i träningsdata istället för att lära sig generella mönster."
+    },
+    {
+      "question": "Nämn några vanliga regulariseringstekniker",
+      "answer": "L1 (Lasso) och L2 (Ridge) regularisering, samt dropout. L1 straffar absoluta viktvärden och skapar gleshet, L2 straffar kvadratiska värden, dropout inaktiverar slumpmässiga neuroner under träning."
+    },
+    {
+      "question": "Hur skulle du svara på arbetsintervjufrågan om dina maskininlärningskunskaper?",
+      "answer": "Jag kan optimera er verksamhet genom prediktiv analys och automatisering. Exempelvis kan jag utveckla kundavhoppsmodeller, förbättra försäljningsprognoser eller skapa personaliserade rekommendationssystem."
+    },
+    {
+      "question": "Vad är skillnaden mellan ANN och CNN?",
+      "answer": "ANN är allmänna nätverk för olika datatyper, medan CNN är specialiserade för bilddata. CNN använder konvolutionella lager för att automatiskt extrahera spatiala funktioner från bilder."
+    },
+    {
+      "question": "Ge exempel på när ANN och CNN används",
+      "answer": "ANN används för tabelldata, klassificering och regression. CNN används för bildigenkänning, objektdetektion och bildklassificering tack vare deras förmåga att fånga spatiala hierarkier."
+    },
+    {
+      "question": "Varför använder vi Kafka istället för vanliga HTTP-anrop för dataströmmar?",
+      "answer": "Kafka hanterar högvolym realtidsdataströmmar med låg latens och hög throughput. Den ger bättre skalbarhet, feltolerans och data persistence jämfört med HTTP."
+    },
+    {
+      "question": "Förklara fördelar med Kafka plattformen",
+      "answer": "Kafka erbjuder distribuerad, replikerad och feltolerant dataströmhantering. Den stöder pub-sub-modell, garanterar meddelandeleverans och hanterar backpressure effektivt."
+    },
+    {
+      "question": "Vilka problem kan en restaurant ha som machine learning kan lösa?",
+      "answer": "Prediktiv inventeringshantering, personalplanering baserad på förväntad beläggning, och personaliserade menyrekommendationer. AI kan också optimera prissättning och analysera kundfeedback."
+    },
+    {
+      "question": "När är Accuracy inte ett tillförlitligt mått?",
+      "answer": "Accuracy är otillförlitligt vid starkt obalanserade dataset där en klass dominerar. Det kan dölja dålig prestanda på minoritetsklasser som kan vara viktigast."
+    },
+    {
+      "question": "Vad innebär Transfer Learning?",
+      "answer": "Transfer Learning återanvänder kunskap från en förtränad modell på en relaterad uppgift. Det sparar tid och data samt förbättrar prestanda, speciellt vid begränsade datamängder."
+    },
+    {
+      "question": "Ge exempel på Transfer Learning tillämpningar",
+      "answer": "Använda bildklassificeringsmodeller tränade på ImageNet för medicinsk bildanalys. Återanvända språkmodeller som BERT för specifika textklassificeringsuppgifter med mindre data."
+    },
+    {
+      "question": "Vilka är fördelarna med Transfer Learning?",
+      "answer": "Minskat databehov, kortare träningstid och förbättrad prestanda på relaterade uppgifter. Det möjliggör användning av avancerade modeller även med begränsade resurser."
+    },
+    {
+      "question": "Varför delar vi upp data i tränings- och testdata?",
+      "answer": "Uppdelning evaluerar modellens förmåga att generalisera till osett data. Det förhindrar överoptimering på träningsdata och ger en realistisk bedömning av modellprestanda."
+    },
+    {
+      "question": "Hur påverkar datauppdelning generaliseringsförmåga?",
+      "answer": "Testdata simulerar hur modellen presterar på ny data, vilket avslöjar överanpassning. En stor skillnad mellan tränings- och testprestanda indikerar dålig generalisering."
+    },
+    {
+      "question": "Vad är vanishing gradients?",
+      "answer": "Vanishing gradients är när gradienter blir extremt små i djupa nätverk, vilket stoppar inlärning i tidiga lager. Det förhindrar effektiv träning av mycket djupa neurala nätverk."
+    },
+    {
+      "question": "Vilka arkitekturlösningar motverkar vanishing gradients?",
+      "answer": "ResNet använder residual connections som låser gradientflöde. Inception använder parallella konvolutioner och 1x1 konvolutioner för att stabilisera inlärning i djupa nätverk."
+    },
+    {
+      "question": "Vad betyder Natural Language Processing (NLP)?",
+      "answer": "NLP är AI-fältet som fokuserar på datorers förståelse och bearbetning av mänskligt språk. Det kombinerar lingvistik, datorvetenskap och maskininlärning för språkrelaterade uppgifter."
+    },
+    {
+      "question": "Nämn några modeller som används inom NLP",
+      "answer": "BERT för bidirektionell språkförståelse, GPT för textgenerering, och Transformer för olika NLP-uppgifter. Dessa modeller använder attention-mekanismer för bättre kontextförståelse."
+    },
+    {
+      "question": "Hur tillämpas NLP-modeller i praktiken?",
+      "answer": "NLP används för sentimentanalys, chatbots, automatisk översättning och textsammanfattning. Det möjliggör automatiserad textanalys och naturlig språkinteraktion med system."
+    }
+  ]

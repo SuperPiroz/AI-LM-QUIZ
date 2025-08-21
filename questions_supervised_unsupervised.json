@@ -1,0 +1,198 @@
+[
+    {
+      "question": "Vad är huvudsyftet med Unsupervised Learning?",
+      "answer": "Att upptäcka dolda mönster eller grupperingar i data utan fördefinierade etiketter. Det används för att reducera komplexitet och identifiera anomalier. Syftet är att låta algoritmen hitta intressanta strukturer självständigt."
+    },
+    {
+      "question": "Vad är skillnaden mellan Supervised och Unsupervised Learning?",
+      "answer": "Supervised Learning använder etiketterade data med kända utfall, medan Unsupervised Learning arbetar med oetiketterad data utan fördefinierade mål. Supervised används för förutsägelser, Unsupervised för datautforskning och mönsterigenkänning."
+    },
+    {
+      "question": "Vad är K-means klustring och hur fungerar det?",
+      "answer": "K-means är en klustringsalgoritm som delar datapunkter i ett förbestämt antal kluster. Varje kluster representeras av en centroid, och datapunkter tilldelas det närmaste klustret. Algoritmen upprepar processen tills centroiderna stabiliseras."
+    },
+    {
+      "question": "Nämn en fördel och en nackdel med K-means.",
+      "answer": "Fördel: Enkel och snabb att implementera för stora dataset. Nackdel: Kräver att antal kluster specificeras i förväg och är känslig för initiala centroidval."
+    },
+    {
+      "question": "Vad är PCA och varför används det?",
+      "answer": "PCA (Principal Component Analysis) är en dimensionsreduceringsmetod som minskar antalet variabler samtidigt som så mycket information som möjligt bevaras. Det används för att förenkla data, förbättra visualisering och öka beräkningseffektivitet."
+    },
+    {
+      "question": "Vad är en dendrogram och i vilken klustringsmetod används det?",
+      "answer": "Ett dendrogram är en hierarkisk trädliknande struktur som visar hur kluster bildas och slås samman. Det används i hierarkisk klustring för att visualisera klusterrelationer och välja antal kluster."
+    },
+    {
+      "question": "Vad är Isolation Forest och hur identifierar den anomalier?",
+      "answer": "Isolation Forest är en algoritm för anomalidetektion som bygger på att anomalier är lättare att isolera än normala datapunkter. Den använder beslutsträd för att mäta isoleringstid och tilldelar anomalipoäng baserat på hur snabbt en punkt isoleras."
+    },
+    {
+      "question": "Vad är en aktiveringsfunktion i ett neuralt nätverk?",
+      "answer": "En aktiveringsfunktion introducerar icke-linjäritet i ett neuralt nätverk, vilket gör det möjligt att lära sig komplexa mönster. Vanliga exempel inkluderar ReLU, sigmoid och tanh."
+    },
+    {
+      "question": "Vad är Regularisering och varför behövs det?",
+      "answer": "Regularisering är en teknik för att förhindra överanpassning genom att straffa komplexa modeller. Den hjälper till att förbättra generaliseringsförmågan på ny data genom att kontrollera modellens komplexitet."
+    },
+    {
+      "question": "Vad är Grid Search och varför används det?",
+      "answer": "Grid Search är en metod för hyperparameteroptimering där man testar alla kombinationer av fördefinierade parametervärden. Det används för att hitta den optimala parameterkombinationen för bäst modellprestanda."
+    },
+    {
+      "question": "Vad är skillnaden mellan L1 och L2 regularisering?",
+      "answer": "L1 (Lasso) regularisering straffar absoluta viktvärden och kan leda till gleshet, medan L2 (Ridge) straffar kvadratiska värden och behåller alla funktioner. L1 används för funktionsurval, L2 för stabilare modeller."
+    },
+    {
+      "question": "Vad är XGBoost och hur skiljer det sig från Random Forest?",
+      "answer": "XGBoost är en gradientboosting-metod som bygger träd sekventiellt för att korrigera tidigare fel. Till skillnad från Random Forest, som använder bagging och oberoende träd, använder XGBoost boosting och viktade bidrag från varje träd."
+    },
+    {
+      "question": "Vad är SMOTE och när används det?",
+      "answer": "SMOTE (Synthetic Minority Over-sampling Technique) är en metod för att hantera klassobalans genom att generera syntetiska datapunkter för minoritetsklassen. Det används när dataset är obalanserade för att förbättra modellens prestanda på minoritetsklassen."
+    },
+    {
+      "question": "Vad är en Confusion Matrix?",
+      "answer": "En Confusion Matrix är en tabell som visar en klassificeringsmodells prestanda genom att jämföra faktiska och förutsagda värden. Den inkluderar True Positives, True Negatives, False Positives och False Negatives."
+    },
+    {
+      "question": "Vad mäter Accuracy i en klassificeringsmodell?",
+      "answer": "Accuracy mäter andelen korrekta förutsägelser av totala förutsägelser. Det är ett generellt mått på modellens noggrannhet, men kan vara missvisande vid obalanserade dataset."
+    },
+    {
+      "question": "Vad är Precision och Recall?",
+      "answer": "Precision mäter andelen korrekta positiva förutsägelser av alla förutsagda positiva. Recall mäter andelen korrekta positiva förutsägelser av alla faktiska positiva. Båda är viktiga vid obalanserade dataset."
+    },
+    {
+      "question": "Vad är F1-score och varför är det användbart?",
+      "answer": "F1-score är det harmoniska medelvärdet av precision och recall. Det är användbart vid obalanserade dataset eftersom det balanserar både falska positiva och falska negativa."
+    },
+    {
+      "question": "Vad är ROC AUC kurva?",
+      "answer": "ROC AUC kurvan visar relationen mellan True Positive Rate och False Positive Rate över olika tröskelvärden. AUC värde mäter modellens förmåga att skilja mellan klasser, där 1.0 indikerar perfekt separation."
+    },
+    {
+      "question": "Vad är Linjär Regression och när används den?",
+      "answer": "Linjär Regression är en algoritm för att förutsäga kontinuerliga värden baserat på linjära samband mellan variabler. Den används för problem som prisförutsägelser och trendanalyser."
+    },
+    {
+      "question": "Vad är Logistisk Regression och när används den?",
+      "answer": "Logistisk Regression används för binära klassificeringsproblem och beräknar sannolikheten för ett utfall. Den används inom områden som medicin, marknadsföring och riskbedömning."
+    },
+    {
+      "question": "Vad är KNN (K-Nearest Neighbors)?",
+      "answer": "KNN är en instansbaserad algoritm för klassificering och regression som baserar förutsägelser på majoriteten av de k närmaste grannarna. Den kräver ingen träningsfas men är beräkningskrävande för stora dataset."
+    },
+    {
+      "question": "Vad är Survival Analysis?",
+      "answer": "Survival Analysis analyserar tid till en specifik händelse, som överlevnad eller produktfel. Den hanterar censurerade data och använder metoder som Kaplan-Meier och Cox regression."
+    },
+    {
+      "question": "Vad är Kaplan-Meier estimator?",
+      "answer": "Kaplan-Meier är en icke-parametrisk metod för att uppskatta överlevnadsfunktionen från censurerad data. Den ger en grafisk representation av överlevnadssannolikhet över tid."
+    },
+    {
+      "question": "Vad är Cox Proportional Hazards modell?",
+      "answer": "Cox-modellen är en semi-parametrisk metod för att analysera hur förklarande variabler påverkar överlevnadstiden. Den antar proportionella hazarder och beräknar hazardkvoter för varje variabel."
+    },
+    {
+      "question": "Vad är hazardkvot (Hazard Ratio)?",
+      "answer": "Hazardkvot mäter hur en förändring i en förklarande variabel påverkar risken för en händelse. HR > 1 indikerar ökad risk, HR < 1 indikerar minskad risk."
+    },
+    {
+      "question": "Vad är bootstrapping i Random Forest?",
+      "answer": "Bootstrapping är en teknik där varje träd i Random Forest tränas på en slumpmässig delmängd av data med återläggning. Detta skapar variation mellan träd och minskar överanpassning."
+    },
+    {
+      "question": "Vad är feature importance i Random Forest?",
+      "answer": "Feature importance mäter hur viktig varje variabel är för modellens prediktionsförmåga. Det beräknas baserat på hur mycket varje variabel minskar orenheten i träden."
+    },
+    {
+      "question": "Vad är vanishing gradient problem?",
+      "answer": "Vanishing gradient är ett problem i djupa neurala nätverk där gradienterna blir extremt små under backpropagation. Det försvårar inlärningen i tidiga lager och kan lösas med arkitekturer som ResNet."
+    },
+    {
+      "question": "Vad är en transformer inom NLP?",
+      "answer": "Transformer är en neural nätverksarkitektur som använder attention-mekanismer för att bearbeta sekvensdata. Den är grunden för modeller som BERT och GPT och har revolutionerat NLP."
+    },
+    {
+      "question": "Vad är BERT och vad är dess innovation?",
+      "answer": "BERT (Bidirectional Encoder Representations from Transformers) är en språkmodell som lär sig kontextuella representationer genom att läsa text i båda riktningarna. Dess innovation är bidirektionell inlärning för djupare kontextförståelse."
+    },
+    {
+      "question": "Vad är attention mekanism i transformer?",
+      "answer": "Attention mekanism låter modellen fokusera på relevanta delar av indata när den bearbetar information. Den hjälper till att förbättra kontextförståelse och hantera långa sekvenser."
+    },
+    {
+      "question": "Vad är en tokenizer i NLP?",
+      "answer": "En tokenizer delar upp text i mindre enheter som ord eller subwords och konverterar dem till numeriska IDn. Den används för att förbereda text för bearbetning av NLP-modeller."
+    },
+    {
+      "question": "Vad är överanpassning (overfitting)?",
+      "answer": "Överanpassning inträffar när en modell lär sig för mycket av träningsdata, inklusive brus och outliers, och presterar dåligt på ny data. Det kan motverkas med regularisering, cross-validering och förenkling av modeller."
+    },
+    {
+      "question": "Vad är cross-validering?",
+      "answer": "Cross-validering är en teknik där data delas upp i flera delar för att träna och validera modellen på olika subset. Det hjälper till att bedöma modellens generaliseringsförmåga och minska överanpassning."
+    },
+    {
+      "question": "Vad är en ROC kurva?",
+      "answer": "ROC kurvan (Receiver Operating Characteristic) visualiserar prestandan för en klassificeringsmodell över olika tröskelvärden. Den plottar True Positive Rate mot False Positive Rate för att visa avvägningen mellan sensitivitet och specificitet."
+    },
+    {
+      "question": "Vad är AUC och hur tolkas det?",
+      "answer": "AUC (Area Under the Curve) mäter arean under ROC kurvan och kvantifierar modellens förmåga att skilja mellan klasser. AUC nära 1.0 indikerar excellent prestanda, medan 0.5 indikerar slumpmässig prestanda."
+    },
+    {
+      "question": "Vad är dataläckage (data leakage)?",
+      "answer": "Dataläckage uppstår när information från testdata oavsiktligt används under träning, vilket leder till överdrivet optimistiska resultat. Det kan undvikas genom korrekt datadelning och skalning efter träning-test split."
+    },
+    {
+      "question": "Vad är en neuralt nätverks optimerare?",
+      "answer": "En optimerare är en algoritm som anpassar vikterna i ett neuralt nätverk för att minimera förlustfunktionen. Vanliga optimerare inkluderar SGD, Adam och RMSprop."
+    },
+    {
+      "question": "Vad är gradient descent?",
+      "answer": "Gradient descent är en optimeringsalgoritm som minimerar en funktion genom att iterativt röra sig i riktningen av den negativa gradienten. Den används för att träna neurala nätverk och maskininlärningsmodeller."
+    },
+    {
+      "question": "Vad är backpropagation?",
+      "answer": "Backpropagation är en algoritm för att beräkna gradienterna i ett neuralt nätverk genom kedjeregeln. Den möjliggör effektiv träning av djupa nätverk genom att justera vikter baserat på fel."
+    },
+    {
+      "question": "Vad är en förlustfunktion (loss function)?",
+      "answer": "En förlustfunktion mäter skillnaden mellan förutsagda och faktiska värden. Den används för att vägleda optimeringsprocessen under träning av maskininlärningsmodeller."
+    },
+    {
+      "question": "Vad är batch normalisering?",
+      "answer": "Batch normalisering är en teknik för att stabilisera och påskynda träningen av neurala nätverk. Den normaliserar aktiveringarna i varje lager för att minska interna kovariatförskjutningar."
+    },
+    {
+      "question": "Vad är dropout i neurala nätverk?",
+      "answer": "Dropout är en regulariseringsteknik där slumpmässiga neuroner inaktiveras under träning. Det förhindrar överanpassning genom att göra nätverket mindre beroende av enskilda neuroner."
+    },
+    {
+      "question": "Vad är en autoencoder?",
+      "answer": "En autoencoder är ett neuralt nätverk som lär sig komprimera och rekonstruera data. Den består av en encoder som komprimerar indata och en decoder som rekonstruerar den från den komprimerade representationen."
+    },
+    {
+      "question": "Vad är reinforcement learning?",
+      "answer": "Reinforcement learning är en typ av maskininlärning där en agent lär sig genom att interagera med en miljö och få belöningar eller straff. Syftet är att lära sig en policy som maximerar den totala belöningen."
+    },
+    {
+      "question": "Vad är Q-learning?",
+      "answer": "Q-learning är en reinforcement learning algoritm som lär sig en action-value funktion som ger den förväntade belöningen för att ta en action i en given state. Den används för att lära sig optimala policyer utan en model."
+    },
+    {
+      "question": "Vad är en policy i reinforcement learning?",
+      "answer": "En policy är en strategi som bestämmer vilken action agenten ska ta i en given state. Den kan vara deterministisk eller stokastisk och är central för att maximerar den långsiktiga belöningen."
+    },
+    {
+      "question": "Vad är en Markov Decision Process (MDP)?",
+      "answer": "En MDP är ett matematiskt ramverk för att modellera beslutande i miljöer med tillstånd, actioner, övergångssannolikheter och belöningar. Det är grunden för många reinforcement learning algoritmer."
+    },
+    {
+      "question": "Vad är deep Q-network (DQN)?",
+      "answer": "DQN är en deep reinforcement learning algoritm som kombinerar Q-learning med djupa neurala nätverk. Den använder ett nätverk för att approximera Q-värden och inkluderar tekniker som experience replay för stabilisering."
+    }
+  ]

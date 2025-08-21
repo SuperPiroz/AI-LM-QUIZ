@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Vad är Temporal Convolutional Network (TCN)?",
+    "answer": "TCN är en typ av djupinlärningsmodell som är designad för att analysera sekvens- och tidsberoende data[cite: 84]. Den använder konvolutionella lager för att hitta mönster längs tidsaxeln[cite: 85]."
+  },
+  {
+    "question": "Vilka är de tre kärnkomponenterna i TCN?",
+    "answer": "Kärnkomponenterna är konvolutionella lager, 'dilated convolutions' (utglesade konvolutioner) och 'residual connections' (hopplänkar)[cite: 156, 157, 158]."
+  },
+  {
+    "question": "Vad är syftet med 'dilated convolutions' i TCN?",
+    "answer": "De gör det möjligt för filtret att 'hoppa över' vissa tidssteg[cite: 177]. Detta hjälper modellen att fånga upp långa tidsberoenden utan att behöva en djupare modell[cite: 65, 66, 177]."
+  },
+  {
+    "question": "Vad är en 'residual connection' och varför är den viktig i TCN?",
+    "answer": "Det är en hopplänk som lägger till output från ett tidigare lager direkt till ett senare lager[cite: 194]. Det hjälper till att motverka 'vanishing gradient' och bevarar viktig information i djupa nätverk[cite: 197, 200]."
+  },
+  {
+    "question": "Vilka är de huvudsakliga fördelarna med TCN jämfört med RNN och LSTM?",
+    "answer": "TCN kan tränas mer effektivt på grund av parallellisering[cite: 17, 30]. Den hanterar också långa tidsberoenden bättre och har en mer stabil träning[cite: 17, 30]."
+  },
+  {
+    "question": "Inom vilka områden används TCN typiskt?",
+    "answer": "TCN används ofta för ljudklassificering, taligenkänning och finansiella prognoser[cite: 33]. Det är också effektivt för anomalidetektion i tidsserier[cite: 33]."
+  },
+  {
+    "question": "Vad är den grundläggande skillnaden mellan TCN och 2D-CNN i ljudanalys?",
+    "answer": "2D-CNN behandlar ljuddata som en bild och fokuserar på spatiala mönster i spektrogram[cite: 34]. TCN extraherar MFCC-funktioner och fokuserar på de sekventiella tidsmönstren[cite: 35, 36]."
+  },
+  {
+    "question": "Vad är 'MFCC' och varför är de viktiga i TCN för ljud?",
+    "answer": "MFCC står för 'Mel-Frequency Cepstral Coefficients'[cite: 37]. De representerar ljudets karaktär och är viktiga för att TCN effektivt ska kunna fånga tidsberoenden i ljuddata[cite: 35, 36]."
+  },
+  {
+    "question": "Nämn en av nackdelarna med TCN.",
+    "answer": "En nackdel är att det krävs noggranna tester för att välja de bästa 'dilations'-värdena för optimal prestanda[cite: 31]. Dessutom kan det vara svårare att tolka än enklare modeller[cite: 32]."
+  },
+  {
+    "question": "Hur hanterar TCN-modellen ljuddata av olika längd?",
+    "answer": "Modellen använder 'padding' eller 'trimming' för att standardisera alla 'feature'-vektorer till samma längd[cite: 57, 58]."
+  },
+  {
+    "question": "Vad är en Autoencoder?",
+    "answer": "En Autoencoder är ett neuralt nätverk som komprimerar data och sedan rekonstruerar den till originalformen[cite: 377]. Den tränas för att minimera skillnaden mellan input och output[cite: 381]."
+  },
+  {
+    "question": "Vilka är de tre huvuddelarna i en Autoencoder?",
+    "answer": "De tre delarna är 'Encoder', 'Latent Space' och 'Decoder'[cite: 379, 380]. 'Encoder' komprimerar data, 'Latent Space' är den komprimerade representationen och 'Decoder' rekonstruerar datan[cite: 379, 380]."
+  },
+  {
+    "question": "Vad är syftet med 'Encoder'-delen?",
+    "answer": "Encoderns syfte är att komprimera input-datan till en lägre dimensionell representation, som kallas 'latent space'[cite: 379]."
+  },
+  {
+    "question": "Vad är 'Latent Space'?",
+    "answer": "Det är en reducerad och komprimerad representation av input-datan[cite: 379, 388]. Den kallas också 'bottleneck'[cite: 386]."
+  },
+  {
+    "question": "Vad är 'Decoder'-delen ansvarig för?",
+    "answer": "Decodern är ansvarig för att rekonstruera den ursprungliga datan från den komprimerade representationen i 'latent space'[cite: 380]."
+  },
+  {
+    "question": "Hur mäter en Autoencoder sin 'rekonstruktionsförlust'?",
+    "answer": "Autoencoders träningsprocess baseras på att minimera skillnaden mellan den ursprungliga och den rekonstruerade datan[cite: 381]. Det mäts ofta med 'Mean Squared Error' (MSE)[cite: 382]."
+  },
+  {
+    "question": "Vilka är de fyra främsta målen för Autoencoders?",
+    "answer": "Huvudmålen är dimensionsreduktion, anomali-detektering, brusreducering och datagenerering[cite: 404, 406, 409, 412]."
+  },
+  {
+    "question": "Hur kan Autoencoders användas för anomali-detektering?",
+    "answer": "De tränas på normal data och onormal data resulterar då i en hög rekonstruktionsförlust[cite: 407]. Detta gör dem användbara för att upptäcka bedrägerier eller andra avvikelser[cite: 408]."
+  },
+  {
+    "question": "Nämn två typer av Autoencoders.",
+    "answer": "Två typer är 'Denoising Autoencoder' (DAE) som hanterar brusiga data, och 'Variational Autoencoder' (VAE) som kan generera nya data[cite: 416, 419]."
+  },
+  {
+    "question": "Vad är en 'Convolutional Autoencoder' (CAE) och vad används den för?",
+    "answer": "CAE är specialiserad för bilddata[cite: 420]. Den används ofta för brusreducering och bildrestaurering[cite: 424]."
+  },
+  {
+    "question": "Hur kan Autoencoders användas för bildrestaurering?",
+    "answer": "De tränas med brusiga bilder som input och rena bilder som mål-output[cite: 410]. Nätverket lär sig då att filtrera bort bruset[cite: 410]."
+  },
+  {
+    "question": "Vilken roll spelar Autoencoders inom medicinsk diagnostik?",
+    "answer": "De kan identifiera avvikelser i medicinska bilder, som tumörer eller andra patologier[cite: 426]."
+  },
+  {
+    "question": "Hur används Autoencoders inom finans och bedrägeriupptäckt?",
+    "answer": "De kan identifiera onormala transaktioner som avviker från normala mönster[cite: 428]."
+  },
+  {
+    "question": "Vad är ett exempel på hur en Autoencoder kan fylla i saknade data?",
+    "answer": "Modellen kan lära sig komplexa, icke-linjära samband mellan variabler för att rekonstruera de saknade värdena[cite: 319]. Detta är mer kraftfullt än enkla metoder som medelvärde[cite: 319]."
+  },
+  {
+    "question": "Hur kan 'skip connections' i U-Net, en typ av Autoencoder, förbättra resultaten?",
+    "answer": "Hopplänkar bevarar detaljerad spatial information som annars skulle förloras under nedskalningen[cite: 361]. De gör det möjligt för modellen att effektivt återskapa detaljer i bilden[cite: 362]."
+  },
+  {
+    "question": "Vad är det primära målet med en Autoencoder vid träning?",
+    "answer": "Målet är att output ska vara så lik input som möjligt[cite: 349]. Detta uppnås genom att minimera rekonstruktionsförlusten[cite: 349]."
+  },
+  {
+    "question": "Hur skiljer sig TCN från rekurrenta nätverk (RNN) när det gäller träning?",
+    "answer": "TCN kan parallelliseras, vilket gör träningen snabbare än för RNN och LSTM som är svåra att parallellisera[cite: 125, 126]."
+  },
+  {
+    "question": "Vad är syftet med 'padding' i TCN-modellen?",
+    "answer": "Padding används för att säkerställa att alla 'feature'-vektorer har samma standardiserade längd[cite: 58]. Detta är nödvändigt eftersom olika ljudfiler kan ha olika längder[cite: 58]."
+  },
+  {
+    "question": "Vad är 'vanishing gradient'-problemet som TCN hjälper till att lösa?",
+    "answer": "Det är ett problem i djupa nätverk där signaler och 'gradients' blir svagare när de går bakåt genom många lager[cite: 199]. Residual connections ger en 'genväg' som löser detta[cite: 200]."
+  },
+  {
+    "question": "Hur fungerar en Autoencoder för brusreducering på bilder?",
+    "answer": "Modellen tränas på bilder med brus som input och originalbilder som output[cite: 410]. Nätverket lär sig att återskapa de rena bilderna och filtrera bort bruset[cite: 410]."
+  }
+]
